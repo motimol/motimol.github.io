@@ -1,0 +1,148 @@
+body {
+  font-family: "Assistant";
+  color: white;
+}
+@font-face {
+  font-family: "Assistant";
+  src: url("assets/static/Assistant-Light.ttf");
+}
+.bg {
+  background-image: url("./assets/darkBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  width: 20%;
+  height: 15vh;
+}
+.contextDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 420%;
+  font-weight: 700;
+  height: 5vh;
+}
+p {
+  width: 22%;
+  align-items: center;
+  text-align: center;
+  font-size: 170%;
+}
+input[type="text"] {
+  width: 200%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitButton {
+  background-color: #0080fd;
+  width: 140%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-top: 15%;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+  border: transparent;
+  font-size: 130%;
+  font-weight: 700;
+}
+
+.langSelect {
+  margin-right: 92%;
+  margin-top: 1%;
+  width: 7%;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+}
+/* Media Queries: Tablet Landscape
+@media screen and (max-width: 1060px) {
+  #primary {
+    width: 67%;
+  }
+  #secondary {
+    width: 30%;
+    margin-left: 3%;
+  }
+} */
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+  }
+  p {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10%;
+  }
+  img {
+    width: 40%;
+    height: 15vh;
+  }
+  .bg {
+    height: 100vh;
+  }
+  input[type="text"] {
+    width: 200%;
+    height: 4vh;
+    font-size: 1.8rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submitButton {
+    background-color: #0080fd;
+    width: 170%;
+    height: 5vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 15%;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    border-radius: 2px;
+    border: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .langSelect {
+    margin-right: 92%;
+    margin-top: 1%;
+    width: 20%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+  }
+}

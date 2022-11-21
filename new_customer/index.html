@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>בנדה-בוט</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/bendabotlogo.jpeg">
+
+<body class="bg">
+    <select name="language" onchange="selectionChanged()" id="language" class="langSelect">
+        <option value="" selected disabled hidden>Language</option>
+        <option value="heb">עברית</option>
+        <option value="en">English</option>
+      </select>
+    <div class="contextDiv">
+        <img src="./assets/bendaLogo-removebg.png">
+        <h1 id="title">תודה לך שנרשמת!</h1>
+        <p id="sub_title">עכשיו נשאר רק להכניס פרטים,
+            והבוט מיד שולח לך הודעה!</p>
+        <form>
+            <input type='text' id="email" />
+            <input type='text' id="name" />
+            <input type='text' id="phone_number" />
+            <button id="submit_button" type="button" class="submitButton"></button>
+        </form>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+</html>
