@@ -47,7 +47,7 @@ window.onload = function () {
 // }
 
 button.addEventListener("click", async function (e) {
-  let address = "http://195.28.181.16/:5000";
+  let address = "http://195.28.181.16:5000";
   let email = document.getElementById("email").value;
   let phone_number = document.getElementById("phone_number").value;
   let name = document.getElementById("name").value;
