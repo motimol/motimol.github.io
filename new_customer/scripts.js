@@ -47,7 +47,7 @@ window.onload = function () {
 // }
 
 button.addEventListener("click", async function (e) {
-  let address = "http://bendabot.uc.r.appspot.com";
+  let address = "https://bendabot.uc.r.appspot.com";
   let email = document.getElementById("email").value;
   let phone_number = document.getElementById("phone_number").value;
   let name = document.getElementById("name").value;
