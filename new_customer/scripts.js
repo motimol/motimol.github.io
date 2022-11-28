@@ -71,9 +71,10 @@ button.addEventListener("click", async function (e) {
   }
 
   // window.location = `http://api.whatsapp.com/send?phone=972502332823&text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8B`;
-
+  alert("Please wait a few moments!\אנא המתינו מספר רגעים");
   let url = `${address}/api/v1/add_user?phone_number=${phone_number}&name=${name}&email=${email}`;
-  await fetch(url, { method: "POST" });
+  console.log(url);
+  await fetch(url, { method: "GET" });
   alert("Thank you!\nתודה רבה!");
   return;
 });
