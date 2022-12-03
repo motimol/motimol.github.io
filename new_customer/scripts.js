@@ -39,7 +39,7 @@ const Render = (lang) => {
 
 window.onload = function () {
   Render(lang_en);
-  document.getElementById("loader").style.display = 'none';
+  document.getElementById("loader").style.display = "none";
 };
 //     if(!document.referrer.includes("paypal")){
 //         alert("הדף זמין רק לאחר תשלום!");
@@ -48,8 +48,6 @@ window.onload = function () {
 // }
 
 button.addEventListener("click", async function (e) {
-  document.getElementById("loader").style.display = 'block';
-  
   let address = "https://bendabot.uc.r.appspot.com";
   let email = document.getElementById("email").value;
   let phone_number = document.getElementById("phone_number").value;
@@ -60,9 +58,6 @@ button.addEventListener("click", async function (e) {
     return;
   }
 
-  //RIGHT FORMAT FOR DB
-  phone_number = phone_number.substring(1);
-
   if (email.length == 0 || phone_number.length == 0 || name.length == 0) {
     alert("נא למלא את כל השדות");
     return;
@@ -72,12 +67,15 @@ button.addEventListener("click", async function (e) {
     alert("כתובת מייל לא תקינה");
     return;
   }
+  //RIGHT FORMAT FOR DB
+  phone_number = phone_number.substring(1);
 
+  document.getElementById("loader").style.display = "block";
   // window.location = `http://api.whatsapp.com/send?phone=972502332823&text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8B`;
   let url = `${address}/api/v1/add_user?phone_number=${phone_number}&name=${name}&email=${email}`;
   console.log(url);
   await fetch(url, { method: "GET" });
-  document.getElementById("loader").style.display = 'none';
+  document.getElementById("loader").style.display = "none";
   alert("Thank you!\nתודה רבה!");
   return;
 });
