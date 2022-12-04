@@ -40,12 +40,11 @@ const Render = (lang) => {
 window.onload = function () {
   Render(lang_en);
   document.getElementById("loader").style.display = "none";
-};
-//     if(!document.referrer.includes("paypal")){
-//         alert("הדף זמין רק לאחר תשלום!");
-//         document.getElementById("submit_button").disabled = true;
-//     }
-// }
+    if(!document.referrer.includes("paypal")){
+        alert("הדף זמין רק לאחר תשלום!");
+        document.getElementById("submit_button").disabled = true;
+    }
+}
 
 button.addEventListener("click", async function (e) {
   let address = "https://bendabot.uc.r.appspot.com";
