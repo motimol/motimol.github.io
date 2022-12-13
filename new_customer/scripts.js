@@ -2,7 +2,7 @@ const button = document.getElementById("submit_button");
 //LANGUAGES
 const lang_heb = {
   title: "תודה לך שנרשמת!",
-  sub_title: "עכשיו נשאר רק להכניס פרטים, והבוט מיד שולח לך הודעה!",
+  sub_title: "עכשיו נשאר רק להכניס פרטים, ובדקות הקרובות הבוט ישלח לך הודעה!",
   mail: "המייל שאיתו שילמת (בפייפאל)",
   name: "שם",
   phone_number: "מספר טלפון",
@@ -11,7 +11,7 @@ const lang_heb = {
 const lang_en = {
   title: "Thank you for signing up!",
   sub_title:
-    "Now all that is left is to enter details, and the bot will immediately send you a message",
+    "Now all that is left is to enter details, and the bot will send you a message in a couple of minutes!",
   mail: "The email you paid with (on PayPal)",
   name: "Name",
   phone_number: "Phone number",
